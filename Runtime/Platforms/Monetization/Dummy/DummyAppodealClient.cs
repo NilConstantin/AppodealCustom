@@ -215,8 +215,8 @@ namespace AppodealStack.Monetization.Platforms.Dummy
                 return;
             }
 
-            var defaultPath = Path.Combine(AppodealEditorConstants.PackagePath, "Editor/EditorAds/", prefabName, ".prefab");
-            var assetGuids = AssetDatabase.FindAssets(prefabName);
+            var defaultPath = Path.Combine(AppodealEditorConstants.PackagePath, "Editor/EditorAds/Prefabs/", $"{prefabName}.prefab");
+            var assetGuids = AssetDatabase.FindAssets($"t:GameObject {prefabName}");
             var prefabPath = assetGuids.Length < 1 ? defaultPath : AssetDatabase.GUIDToAssetPath(assetGuids[0]);
 
             var adPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
