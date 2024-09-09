@@ -39,10 +39,10 @@ namespace AppodealStack.Monetization.Platforms.Android
             _listener?.OnRewardedVideoShown();
         }
 
-        private void onRewardedVideoFinished(double amount, UnityEngine.AndroidJavaObject currency)
-        {
-            _listener?.OnRewardedVideoFinished(amount, null);
-        }
+        // private void onRewardedVideoFinished(double amount, UnityEngine.AndroidJavaObject currency)
+        // {
+        //     _listener?.OnRewardedVideoFinished(amount, null);
+        // }
 
         private void onRewardedVideoFinished(double amount, string currency)
         {
