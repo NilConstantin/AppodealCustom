@@ -1,3 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
 *.a filter=lfs diff=lfs merge=lfs -text
 Assets/Mamboo/Analytics/AppMetrica/3rdParty/Plugins/iOS/YandexMobileMetricaCrashes.framework/YandexMobileMetricaCrashes filter=lfs diff=lfs merge=lfs -text
 *.aar filter=lfs diff=lfs merge=lfs -text
